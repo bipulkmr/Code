@@ -47,6 +47,9 @@ int getLength(int val){
             }
         }
     }
+    if(ans==0){
+        return 1;
+    }
     return ans;
 }
 
@@ -70,6 +73,9 @@ int main()
         else{
             low=mid+1;
         }
+    }
+    if(low==0){
+        low=1;
     }
     cout<<getLength(low)<<endl;
 
